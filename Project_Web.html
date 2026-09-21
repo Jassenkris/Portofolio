@@ -3,537 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<<<<<<< HEAD
-    <title>Portofolio Saya - Static Non-Interactive</title>
-
-    <!-- Bootstrap 4.6 CSS Lokal -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!-- Google Fonts Poppins Lokal -->
-    <link rel="stylesheet" href="assets/font/Poppins/poppins.css">
-
-    <style>
-        :root {
-            --bg-cream-main: #FAF7F2;
-            --bg-cream-card: #FFFFFF;
-            --bg-cream-accent: #F2E8DC;
-            --text-primary: #3B332C;
-            --text-muted: #7A7267;
-            --accent-warm: #D9822B;
-            --border-color: #E8E1D7;
-        }
-
-        /* Menghapus Smooth Scroll */
-        html {
-            scroll-behavior: auto !important;
-        }
-
-        body {
-            background-color: var(--bg-cream-main);
-            color: var(--text-primary);
-        }
-
-        header {
-            background-color: rgba(250, 247, 242, 0.95);
-=======
     <title>Portofolio Saya - Responsive Bootstrap 4.6</title>
 
-    <!-- 1. CDN Bootstrap 4.6 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- 1. Local Bootstrap CSS (Version 4.6) -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- 2. FontAwesome Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- FontAwesome (Version 5.15.4) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- integrity (chek program), crossorigin (menjaga history pencarian web kita secara anonim), referrerpolicy (menjaga alamat URL tidak bocor) -->
 
-    <!-- 3. Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <!-- 3. Local Google Fonts (Poppins) -->
+    <link rel="stylesheet" href="assets/font/Poppins/poppins.css">
 
-    <!-- Custom CSS Palette Cream Aesthetic -->
-    <style>
-        :root {
-            --bg-cream-main: #FAF7F2;      /* Warna krim terang latar utama */
-            --bg-cream-card: #FFFFFF;      /* Kartu/kontainer putih bersih */
-            --bg-cream-accent: #F2E8DC;    /* Krim hangat untuk aksen/badge */
-            --text-primary: #3B332C;       /* Cokelat tua pekat untuk teks utama */
-            --text-muted: #7A7267;         /* Cokelat abu halus untuk deskripsi */
-            --accent-warm: #D9822B;         /* Terracotta/Oranye hangat untuk sorotan/tombol */
-            --accent-warm-hover: #BF6D1A;
-            --border-color: #E8E1D7;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-cream-main);
-            color: var(--text-primary);
-            scroll-behavior: smooth;
-        }
-
-        /* Header & Nav */
-        header {
-            background-color: rgba(250, 247, 242, 0.95);
-            backdrop-filter: blur(10px);
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .navbar-brand span {
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-
-<<<<<<< HEAD
-        .navbar-logo {
-            height: 38px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        /* Nav Link Tanpa Efek Hover */
-        .nav-link {
-            color: var(--text-primary) !important;
-            font-weight: 500;
-        }
-
-        .nav-item.active .nav-link {
-            color: var(--accent-warm) !important;
-        }
-
-=======
-        .logo-placeholder {
-            width: 38px;
-            height: 38px;
-            background-color: var(--accent-warm);
-            color: #fff;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        .nav-link {
-            color: var(--text-primary) !important;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .nav-link:hover, .nav-item.active .nav-link {
-            color: var(--accent-warm) !important;
-        }
-
-        /* Section Styling */
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        section {
-            padding: 90px 0;
-        }
-
-        .section-title-box {
-            margin-bottom: 50px;
-        }
-
-        .section-title-box h2 {
-            font-weight: 700;
-            color: var(--text-primary);
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title-box h2::after {
-            content: '';
-            display: block;
-            width: 50%;
-            height: 3px;
-            background-color: var(--accent-warm);
-            margin: 8px auto 0;
-            border-radius: 2px;
-        }
-
-<<<<<<< HEAD
-=======
-        /* Hero Section */
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        #hero {
-            min-height: 85vh;
-            background: linear-gradient(135deg, var(--bg-cream-main) 0%, var(--bg-cream-accent) 100%);
-        }
-
-<<<<<<< HEAD
-        /* Badge Hero Tanpa Efek Transisi/Hover Pop-Up */
-        .badge-hero-custom {
-            font-size: 1.1rem;
-            font-weight: 600;
-            padding: 12px 28px !important;
-            background-color: var(--bg-cream-accent);
-            color: var(--accent-warm);
-            border: 1.5px solid var(--text-muted); 
-            border-radius: 50px;
-            display: inline-block;
-            box-shadow: 0 4px 12px rgba(59, 51, 44, 0.12);
-        }
-
-        /* Tombol Tanpa Animasi / Hover Transisi */
-=======
-        .badge-hero {
-            background-color: var(--bg-cream-accent);
-            color: var(--accent-warm);
-            border: 1px solid var(--border-color);
-            font-weight: 600;
-        }
-
-        .hero-title {
-            color: var(--text-primary);
-        }
-
-        .hero-desc {
-            color: var(--text-muted);
-        }
-
-        /* Buttons */
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        .btn-custom-navy {
-            background-color: var(--text-primary);
-            color: #ffffff;
-            border-radius: 30px;
-            padding: 10px 28px;
-            font-weight: 600;
-            border: none;
-<<<<<<< HEAD
-=======
-            transition: all 0.3s ease;
-        }
-
-        .btn-custom-navy:hover {
-            background-color: var(--accent-warm);
-            color: #ffffff;
-            transform: translateY(-2px);
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        }
-
-        .btn-custom-outline {
-            border: 2px solid var(--text-primary);
-            color: var(--text-primary);
-            border-radius: 30px;
-            padding: 8px 26px;
-            font-weight: 600;
-            background: transparent;
-<<<<<<< HEAD
-        }
-
-        /* Card Service Statis Tanpa Efek Melayang (Pop-Up/TranslateY) */
-=======
-            transition: all 0.3s ease;
-        }
-
-        .btn-custom-outline:hover {
-            background-color: var(--text-primary);
-            color: #ffffff;
-            transform: translateY(-2px);
-        }
-
-        /* Cards & Services */
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        .card-service {
-            background-color: var(--bg-cream-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-<<<<<<< HEAD
-        }
-
-        .skill-list li {
-            padding: 6px 0;
-            border-bottom: 1px dashed var(--border-color);
-        }
-
-        .skill-list li:last-child {
-            border-bottom: none;
-        }
-
-=======
-            transition: all 0.3s ease;
-        }
-
-        .card-service:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
-        }
-
-        .icon-navy { color: var(--text-primary); }
-        .icon-orange { color: var(--accent-warm); }
-        .icon-red { color: #D9534F; }
-
-        /* About Section */
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        .wave-box {
-            background-color: var(--bg-cream-accent);
-            border-radius: 16px;
-            padding: 20px;
-            overflow: hidden;
-        }
-
-<<<<<<< HEAD
-        /* Elemen Input Tetap Dipertahankan Sesuai Permintaan */
-=======
-        /* Forms */
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        .form-control-custom {
-            background-color: var(--bg-cream-card);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 12px 18px;
-            color: var(--text-primary);
-        }
-
-<<<<<<< HEAD
-=======
-        .form-control-custom:focus {
-            background-color: #ffffff;
-            border-color: var(--accent-warm);
-            box-shadow: 0 0 0 0.2rem rgba(217, 130, 43, 0.15);
-        }
-
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        .btn-submit {
-            background-color: var(--accent-warm);
-            color: #ffffff;
-            border-radius: 10px;
-            padding: 10px 35px;
-            font-weight: 600;
-            border: none;
-<<<<<<< HEAD
-        }
-
-=======
-            transition: all 0.3s ease;
-        }
-
-        .btn-submit:hover {
-            background-color: var(--accent-warm-hover);
-            color: #ffffff;
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        footer {
-            background-color: var(--bg-cream-accent);
-            border-top: 1px solid var(--border-color);
-            padding: 30px 0;
-        }
-
-<<<<<<< HEAD
-        .contact-info-card {
-            background-color: var(--text-primary);
-            color: #ffffff;
-            border-radius: 16px;
-            padding: 35px 30px;
-=======
-        /* Custom Contact Layout (Sesuai Referensi Gambar) */
-        .contact-info-card {
-            background-color: var(--text-primary); /* Latar gelap cokelat tua agar kontras */
-            color: #ffffff;
-            border-radius: 16px;
-            padding: 35px 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        .contact-info-card h3 {
-            color: #ffffff;
-            font-weight: 600;
-        }
-
-        .contact-info-card p {
-            color: var(--border-color);
-            font-size: 0.95rem;
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        }
-
-        .contact-link {
-            color: var(--bg-cream-accent);
-            text-decoration: none;
-<<<<<<< HEAD
-=======
-            font-size: 0.95rem;
-            transition: color 0.3s ease;
-        }
-
-        .contact-link:hover {
-            color: var(--accent-warm);
-            text-decoration: none;
-        }
-
-        .social-icons a {
-            color: #ffffff;
-            font-size: 1.2rem;
-            margin-right: 15px;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: var(--accent-warm);
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        }
-
-        .contact-form-card {
-            background-color: #ffffff;
-            border-radius: 16px;
-            padding: 35px 30px;
-            border: 1px solid var(--border-color);
-<<<<<<< HEAD
-=======
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-        }
-
-        .contact-form-card h3 {
-            color: var(--text-primary);
-            font-weight: 600;
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-        }
-    </style>
+    <!-- 4. MyStyle Custom -->
+    <link rel="stylesheet" href="assets/css/MyStyle.css">
+    
 </head>
 <body>
 
-<<<<<<< HEAD
-    <!-- NAVBAR -->
-    <header class="sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand navbar-light py-2">
-                <a class="navbar-brand d-flex align-items-center" href="javascript:void(0);">
-                    <img src="assets/img/logo-rb.png" alt="Logo" class="navbar-logo mr-2">
-                    <span>MyPortofolio</span>
-                </a>
-                <div class="navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link px-2 px-md-3" href="javascript:void(0);">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-2 px-md-3" href="javascript:void(0);">Services</a></li>
-                        <li class="nav-item"><a class="nav-link px-2 px-md-3" href="javascript:void(0);">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-2 px-md-3" href="javascript:void(0);">Contact</a></li>
-=======
-    <!-- ==================== 1. HEADER / NAVBAR ==================== -->
-    <header class="sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light py-2">
+    <!-- ==================== 1. MAXIMIZED HEADER / NAVBAR ==================== -->
+    <header class="sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+            <div class="container">
+                <!-- Brand Logo & Title -->
                 <a class="navbar-brand d-flex align-items-center" href="#">
-                    <div class="logo-placeholder mr-2">P</div>
-                    <span>MyPortofolio</span>
+                    <img src="assets/img/logo-rb.png" alt="Logo Portofolio" class="navbar-logo mr-2">
+                    <span class="h5 font-weight-bold mb-0 text-dark">MyPortofolio</span>
                 </a>
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <!-- Tombol Toggle Mobile (JS) -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!-- Menu Navigation -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link px-3" href="#hero">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
+                    <ul class="navbar-nav ml-auto custom-nav-hover">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#services">Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#about">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#contact">Kontak</a>
+                        </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-<<<<<<< HEAD
-    <!-- HERO SECTION -->
-    <section>
-        <div class="container">
-            <div class="row justify-content-center text-center">
-                <div class="col-lg-9">
-                    <span class="badge-hero-custom px-3 py-2 mb-3">Selamat Datang di Portofolio Saya</span>
-                    <h1 class="display-4 font-weight-bold mb-3">Saya Jassen Kristanto</h1>
-                    <p class="lead text-muted mb-4">"Saya adalah pelajar dengan kemampuan Mekatronika, yang tertarik untuk bisa membangun sistem produksinya sendiri."</p>
-                    <div class="d-flex justify-content-center">
-                        <a href="javascript:void(0);" class="btn btn-custom-navy mr-2">Hubungi Kami</a>
-                        <a href="javascript:void(0);" class="btn btn-custom-outline">Lihat Layanan</a>
-=======
     <!-- ==================== 2. HERO SECTION ==================== -->
     <section id="hero" class="d-flex align-items-center text-center">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
-                    <span class="badge badge-pill badge-hero px-3 py-2 mb-3">
+                    <span class="badge-hero-custom px-3 py-2 mb-3">
                         Selamat Datang di Portofolio Saya
                     </span>
-                    <h1 class="display-4 font-weight-bold hero-title mb-3">Membangun Solusi Digital Terdepan</h1>
-                    <p class="lead hero-desc mb-4">"Kreativitas, Ketepatan, dan Inovasi untuk Pertumbuhan Bisnis Anda."</p>
+                    <h1 class="display-4 font-weight-bold hero-title mb-3">Saya Jassen Kristanto</h1>
+                    <p class="lead hero-desc mb-4">"Saya adalah pelajar dengan kemampuan Mekatronika, yang tertarik untuk bisa membangun sistem produksinya sendiri."</p>
                     <div class="d-flex justify-content-center">
                         <a href="#contact" class="btn btn-custom-navy mr-2">Hubungi Kami</a>
                         <a href="#services" class="btn btn-custom-outline">Lihat Layanan</a>
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<<<<<<< HEAD
-    <!-- SERVICES SECTION -->
-    <section class="text-center py-5">
+    <!-- ==================== 3. SERVICES SECTION ==================== -->
+    <section id="services" class="text-center py-5">
         <div class="container">
             <div class="section-title-box mb-4">
-                <h2 class="h4 font-weight-bold">Layanan</h2>
+                <h2 class="h2 font-weight-bold">Layanan</h2>
             </div>
-=======
-    <!-- ==================== 3. SERVICES SECTION ==================== -->
-    <section id="services" class="text-center">
-        <div class="container">
-            <div class="section-title-box">
-                <h2 class="h4">Layanan</h2>
-            </div>
-            
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
+
             <div class="row">
+                <!-- Mekanika Engineering -->
                 <div class="col-md-4 mb-4">
                     <div class="card card-service h-100 p-3">
                         <div class="card-body">
-<<<<<<< HEAD
+                            <i class="fas fa-cogs fa-3x icon-orange mb-3"></i>
                             <h3 class="h5 font-weight-bold mb-3">Mekanika Engineering</h3>
-                            <ul class="list-unstyled skill-list text-left mb-0">
-                                <li><strong>CAD 2D Modeling:</strong> AutoCAD, Manual Drawing</li>
-                                <li><strong>CAD 3D Modeling:</strong> SolidWorks, Fusion 360</li>
-                                <li><strong>Prototyping & Manufaktur:</strong> 3D Printing, Laser Cutting</li>
-                                <li><strong>Machining:</strong> CNC Milling, CNC Bubut</li>
+                            <ul class="list-unstyled text-left mb-0">
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>CAD 2D Modeling:</strong> AutoCAD, Manual Drawing</li>
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>CAD 3D Modeling:</strong> SolidWorks, Fusion 360</li>
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Prototyping & Manufaktur:</strong> 3D Printing, Laser Cutting</li>
+                                <li><i class="fas fa-check mr-2 text-warning"></i><strong>Machining:</strong> CNC Milling, CNC Bubut, Manual Work</li>
                             </ul>
-=======
-                            <i class="fas fa-laptop-code fa-3x icon-navy mb-3"></i>
-                            <h3 class="h5 font-weight-bold">Web Development</h3>
-                            <p class="card-text text-muted">Membangun website modern, cepat, dan responsif sesuai kebutuhan bisnis Anda.</p>
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
                         </div>
                     </div>
                 </div>
+
+                <!-- Elektronika Engineering -->
                 <div class="col-md-4 mb-4">
                     <div class="card card-service h-100 p-3">
                         <div class="card-body">
-<<<<<<< HEAD
+                            <i class="fas fa-bolt fa-3x icon-navy mb-3"></i>
                             <h3 class="h5 font-weight-bold mb-3">Elektronika Engineering</h3>
-                            <ul class="list-unstyled skill-list text-left mb-0">
-                                <li><strong>Desain PCB:</strong> Skematik & Layout</li>
-                                <li><strong>Sistem Aktuator:</strong> Motor DC, Stepper, Pneumatik</li>
-                                <li><strong>Sensor:</strong> Jarak, Suhu, Encoder, Proximity</li>
+                            <ul class="list-unstyled text-left mb-0">
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Desain PCB:</strong> Skematik & Board Layout (Fusion)</li>
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Sistem Aktuator & Daya:</strong> Motor DC, Stepper, Pneumatik</li>
+                                <li><i class="fas fa-check mr-2 text-warning"></i><strong>Sensor & Instrumentasi:</strong> Sensor Jarak, Suhu, Proximity</li>
                             </ul>
-=======
-                            <i class="fas fa-palette fa-3x icon-orange mb-3"></i>
-                            <h3 class="h5 font-weight-bold">UI/UX Design</h3>
-                            <p class="card-text text-muted">Merancang antarmuka pengguna yang ramah, estetis, dan intuitif.</p>
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
                         </div>
                     </div>
                 </div>
+
+                <!-- Informatika & Programming -->
                 <div class="col-md-4 mb-4">
                     <div class="card card-service h-100 p-3">
                         <div class="card-body">
-<<<<<<< HEAD
+                            <i class="fas fa-microchip fa-3x icon-navy mb-3"></i>
                             <h3 class="h5 font-weight-bold mb-3">Informatika & Programming</h3>
-                            <ul class="list-unstyled skill-list text-left mb-0">
-                                <li><strong>Mikrokontroler:</strong> C/C++ (Arduino, ESP32)</li>
-                                <li><strong>Protokol Komunikasi:</strong> I2C, SPI</li>
-                                <li><strong>PLC:</strong> Ladder Diagram (TIA Portal, CX)</li>
+                            <ul class="list-unstyled text-left mb-0">
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Mikrokontroler:</strong> C/C++ (Arduino, ESP32, Raspberry Pi)</li>
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Protokol Komunikasi:</strong> I2C, SPI</li>
+                                <li><i class="fas fa-check mr-2 text-warning"></i><strong>Pemrograman PLC:</strong> Ladder Diagram (TIA Portal, CX)</li>
                             </ul>
-=======
-                            <i class="fas fa-chart-bar fa-3x icon-red mb-3"></i>
-                            <h3 class="h5 font-weight-bold">Digital Strategy</h3>
-                            <p class="card-text text-muted">Membantu mengoptimalkan performa dan jangkauan produk secara digital.</p>
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
                         </div>
                     </div>
                 </div>
@@ -541,45 +135,88 @@
         </div>
     </section>
 
-<<<<<<< HEAD
-    <!-- ABOUT SECTION -->
-    <section class="text-center">
-=======
     <!-- ==================== 4. ABOUT SECTION ==================== -->
-    <section id="about" class="text-center">
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
+    <section id="about">
         <div class="container">
-            <div class="section-title-box">
-                <h2 class="h4">Tentang Saya</h2>
+            <div class="about-image-layout">
+                <div class="text-center section-title-box">
+                    <h2 class="h2 font-weight-bold">Tentang Saya</h2>
+                </div>
+                <!-- Baris 1: Paragraf Atas Penuh -->
+                <div class="row mb-4">
+                    <div class="col-12 text-left">
+                        <p class="lead font-weight-normal text-dark m-0">
+                            Saya Adalah mahasiswa yang belajar di Politeknik ATMI Surakarta, saat ini saya fokus untuk mengembangkan project saya untuk mengembangkan web portofolio demi mendukung kuliah saya. Memanfaatkan HTML dan CSS sebagai programnya saya memiliki impian untuk terus menyempurnakan web buatan saya.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Baris 2: Heding (Kiri) & Performance (Kanan) -->
+                <div class="row align-items-start text-left">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2 class="h3 font-weight-bold text-dark mb-3">Heding</h2>
+                        <p class="text-dark leading-relaxed m-0">
+                            Setiap baris kode dan elemen desain dibuat dengan teliti. Saya dan tim berkomitmen untuk menyajikan performa terbaik dalam setiap solusi digital yang kami ciptakan.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="h3 font-weight-bold text-dark mb-3">Performance</h2>
+                        <div class="wave-box-custom">
+                            <svg width="100%" height="90" viewBox="0 0 400 100" preserveAspectRatio="none">
+                                <path d="M 10,20 Q 100,50 200,20 T 390,20 L 390,60 Q 300,90 200,60 T 10,60 Z" 
+                                      fill="#FFFFFF" 
+                                      stroke="#000000" 
+                                      stroke-width="2.5" 
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
-<<<<<<< HEAD
-            <p class="lead text-muted mb-5 mx-auto">Saya Adalah mahasiswa Politeknik ATMI Surakarta yang fokus mengembangkan project web portofolio ini.</p>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section>
+    <!-- ==================== 5. CONTACT SECTION ==================== -->
+    <section id="contact">
         <div class="container">
             <div class="text-center section-title-box">
-                <h2 class="h3 font-weight-bold">Contact Saya</h2>
+                <h2 class="h2 font-weight-bold">kontak Saya</h2>
             </div>
+            
             <div class="row align-items-stretch">
+                <!-- Left Column -->
                 <div class="col-lg-5 mb-4 mb-lg-0">
                     <div class="contact-info-card h-100 d-flex flex-column justify-content-between">
                         <div>
                             <h3 class="h4 mb-3">Mari Bekerja Bersama</h3>
-                            <p class="mb-4">Silahkan menghubungi saya untuk kerjasama project.</p>
-                            <p class="mb-2">Email: <a href="mailto:krisjassen@gmail.com" class="contact-link">krisjassen@gmail.com</a></p>
-                            <p>Telepon: <a href="tel:+6281280202260" class="contact-link">+62 812-8020-2260</a></p>
+                            <p class="mb-4">Anda memiliki project atau ingin membuat perubahan? Silahkan menghubungi saya.</p>
+                            
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="far fa-envelope mr-3 text-white"></i>
+                                <a href="mailto:krisjassen@gmail.com" class="contact-link">krisjassen@gmail.com</a>
+                            </div>
+                            
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fas fa-phone-alt mr-3 text-white"></i>
+                                <a href="tel:+6281280202260" class="contact-link">+62 812-8020-2260</a>
+                            </div>
+                        </div>
+
+                        <div class="social-icons pt-3">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Right Column -->
                 <div class="col-lg-7">
                     <div class="contact-form-card h-100 d-flex flex-column justify-content-between">
                         <div>
                             <h3 class="h4 mb-4">Kirim Pesan</h3>
-                            <!-- Komponen Input & Textarea Tetap Utuh -->
-                            <form id="contactForm">
+                            <form id="contactForm" action="#" method="POST">
                                 <div class="form-group mb-3">
                                     <input type="text" class="form-control form-control-custom" placeholder="Nama Anda" required>
                                 </div>
@@ -594,94 +231,13 @@
                         <div>
                             <button type="submit" form="contactForm" class="btn btn-submit">Kirim Pesan</button>
                         </div>
-=======
-            
-            <p class="lead text-muted mb-5 max-w-75 mx-auto">Kami berdedikasi menciptakan produk digital yang berfokus pada kualitas dan kenyamanan pengguna.</p>
-            
-            <div class="row align-items-center text-left mt-4">
-                <div class="col-md-6 mb-4">
-                    <h3 class="h5 font-weight-bold mb-3">Komitmen Kualitas</h3>
-                    <p class="text-muted">Setiap baris kode dan elemen desain dibuat dengan teliti. Kami berkomitmen untuk menyajikan performa terbaik dalam setiap solusi digital yang kami ciptakan.</p>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="text-center font-weight-bold mb-2">Performance</div>
-                    <div class="wave-box text-center">
-                        <svg width="100%" height="90" viewBox="0 0 500 150" preserveAspectRatio="none">
-                            <path d="M0,40 C150,170 350,-30 500,90 L500,150 L0,150 Z" fill="#D9822B" opacity="0.8"></path>
-                            <path d="M0,70 C200,190 300,-10 500,120 L500,150 L0,150 Z" fill="#3B332C" opacity="0.6"></path>
-                        </svg>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== 5. CONTACT SECTION ==================== -->
-    <section id="contact">
-        <div class="container">
-            <!-- Judul Utama -->
-            <div class="text-center section-title-box">
-                <h2 class="h3 font-weight-bold">Contact Me</h2>
-            </div>
-            
-            <div class="row align-items-stretch">
-                <!-- Kolom Kiri: Info Kontak & Sosial Media -->
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                    <div class="contact-info-card h-100 d-flex flex-column justify-content-between">
-                        <div>
-                            <h3 class="h4 mb-3">Let's Work Together</h3>
-                            <p class="mb-4">Have a project or opportunity? Feel free to contact me.</p>
-                            
-                            <!-- Email -->
-                            <div class="d-flex align-items-center mb-3">
-                                <i class="far fa-envelope mr-3 text-white"></i>
-                                <a href="mailto:krisjassen@gmail.com" class="contact-link">krisjassen@gmail.com</a>
-                            </div>
-                            
-                            <!-- Telepon -->
-                            <div class="d-flex align-items-center mb-4">
-                                <i class="fas fa-phone-alt mr-3 text-white"></i>
-                                <a href="tel:+6281280202260" class="contact-link">+62 812-8020-2260</a>
-                            </div>
-                        </div>
-
-                        <!-- Sosial Media -->
-                        <div class="social-icons pt-3">
-                            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" target="_blank" aria-label="Twitter/X"><i class="fab fa-twitter"></i></a>
-                            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Kolom Kanan: Formulir Pesan -->
-                <div class="col-lg-7">
-                    <div class="contact-form-card">
-                        <h3 class="h4 mb-4">Send Me a Message</h3>
-                        <form action="#" method="POST">
-                            <div class="form-group mb-3">
-                                <input type="text" class="form-control form-control-custom" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <input type="email" class="form-control form-control-custom" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group mb-4">
-                                <textarea class="form-control form-control-custom" rows="5" placeholder="Your Message" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-submit">Send Message</button>
-                        </form>
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<<<<<<< HEAD
-    <!-- FOOTER -->
-=======
     <!-- ==================== 6. FOOTER SECTION ==================== -->
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
     <footer class="text-center">
         <div class="container">
             <h3 class="h5 font-weight-bold mb-2">MyPortofolio</h3>
@@ -689,12 +245,5 @@
         </div>
     </footer>
 
-<<<<<<< HEAD
-=======
-    <!-- JS Dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
->>>>>>> 1a4e540 (Uplod awal project ke branch baru)
 </body>
 </html>
