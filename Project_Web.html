@@ -3,270 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portofolio Saya - Static Non-Interactive</title>
+    <title>Portofolio Saya - Responsive Bootstrap 4.6</title>
 
-    <!-- Bootstrap 4.6 CSS Lokal -->
+    <!-- 1. Local Bootstrap CSS (Version 4.6x) -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-    <!-- Google Fonts Poppins Lokal -->
+    <!-- FontAwesome (Version 5.15.4) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- integrity (chek program), crossorigin (menjaga history pencarian web kita secara anonim), referrerpolicy (menjaga alamat URL tidak bocor) -->
+
+    <!-- 3. Local Google Fonts (Poppins) -->
     <link rel="stylesheet" href="assets/font/Poppins/poppins.css">
 
-    <style>
-        :root {
-            --bg-cream-main: #FAF7F2;
-            --bg-cream-card: #FFFFFF;
-            --bg-cream-accent: #F2E8DC;
-            --text-primary: #3B332C;
-            --text-muted: #7A7267;
-            --accent-warm: #D9822B;
-            --border-color: #E8E1D7;
-        }
-
-        /* Menghapus Smooth Scroll */
-        html {
-            scroll-behavior: auto !important;
-        }
-
-        body {
-            background-color: var(--bg-cream-main);
-            color: var(--text-primary);
-        }
-
-        header {
-            background-color: rgba(250, 247, 242, 0.95);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .navbar-brand span {
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-
-        .navbar-logo {
-            height: 38px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        /* Nav Link Tanpa Efek Hover */
-        .nav-link {
-            color: var(--text-primary) !important;
-            font-weight: 500;
-        }
-
-        .nav-item.active .nav-link {
-            color: var(--accent-warm) !important;
-        }
-
-        section {
-            padding: 90px 0;
-        }
-
-        .section-title-box {
-            margin-bottom: 50px;
-        }
-
-        .section-title-box h2 {
-            font-weight: 700;
-            color: var(--text-primary);
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title-box h2::after {
-            content: '';
-            display: block;
-            width: 50%;
-            height: 3px;
-            background-color: var(--accent-warm);
-            margin: 8px auto 0;
-            border-radius: 2px;
-        }
-
-        #hero {
-            min-height: 85vh;
-            background: linear-gradient(135deg, var(--bg-cream-main) 0%, var(--bg-cream-accent) 100%);
-        }
-
-        /* Badge Hero Tanpa Efek Transisi/Hover Pop-Up */
-        .badge-hero-custom {
-            font-size: 1.1rem;
-            font-weight: 600;
-            padding: 12px 28px !important;
-            background-color: var(--bg-cream-accent);
-            color: var(--accent-warm);
-            border: 1.5px solid var(--text-muted); 
-            border-radius: 50px;
-            display: inline-block;
-            box-shadow: 0 4px 12px rgba(59, 51, 44, 0.12);
-        }
-
-        /* Tombol Tanpa Animasi / Hover Transisi */
-        .btn-custom-navy {
-            background-color: var(--text-primary);
-            color: #ffffff;
-            border-radius: 30px;
-            padding: 10px 28px;
-            font-weight: 600;
-            border: none;
-        }
-
-        .btn-custom-outline {
-            border: 2px solid var(--text-primary);
-            color: var(--text-primary);
-            border-radius: 30px;
-            padding: 8px 26px;
-            font-weight: 600;
-            background: transparent;
-        }
-
-        /* Card Service Statis Tanpa Efek Melayang (Pop-Up/TranslateY) */
-        .card-service {
-            background-color: var(--bg-cream-card);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-        }
-
-        .skill-list li {
-            padding: 6px 0;
-            border-bottom: 1px dashed var(--border-color);
-        }
-
-        .skill-list li:last-child {
-            border-bottom: none;
-        }
-
-        .wave-box {
-            background-color: var(--bg-cream-accent);
-            border-radius: 16px;
-            padding: 20px;
-            overflow: hidden;
-        }
-
-        /* Elemen Input Tetap Dipertahankan Sesuai Permintaan */
-        .form-control-custom {
-            background-color: var(--bg-cream-card);
-            border: 1px solid var(--border-color);
-            border-radius: 10px;
-            padding: 12px 18px;
-            color: var(--text-primary);
-        }
-
-        .btn-submit {
-            background-color: var(--accent-warm);
-            color: #ffffff;
-            border-radius: 10px;
-            padding: 10px 35px;
-            font-weight: 600;
-            border: none;
-        }
-
-        footer {
-            background-color: var(--bg-cream-accent);
-            border-top: 1px solid var(--border-color);
-            padding: 30px 0;
-        }
-
-        .contact-info-card {
-            background-color: var(--text-primary);
-            color: #ffffff;
-            border-radius: 16px;
-            padding: 35px 30px;
-        }
-
-        .contact-link {
-            color: var(--bg-cream-accent);
-            text-decoration: none;
-        }
-
-        .contact-form-card {
-            background-color: #ffffff;
-            border-radius: 16px;
-            padding: 35px 30px;
-            border: 1px solid var(--border-color);
-        }
-    </style>
+    <!-- 4. MyStyle Custom -->
+    <link rel="stylesheet" href="assets/css/MyStyle.css">
+    
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="80">
 
-    <!-- NAVBAR -->
-    <header class="sticky-top">
-        <div class="container">
-            <nav class="navbar navbar-expand navbar-light py-2">
-                <a class="navbar-brand d-flex align-items-center" href="javascript:void(0);">
-                    <img src="assets/img/logo-rb.png" alt="Logo" class="navbar-logo mr-2">
-                    <span>MyPortofolio</span>
+    <!-- ==================== 1. MAXIMIZED HEADER / NAVBAR ==================== -->
+    <header class="sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+            <div class="container">
+                <!-- Brand Logo & Title -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="assets/img/logo-rb.png" alt="Logo Portofolio" class="navbar-logo mr-2">
+                    <span class="h5 font-weight-bold mb-0 text-dark">MyPortofolio</span>
                 </a>
-                <div class="navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link px-2 px-md-3" href="javascript:void(0);">Home</a></li>
-                        <li class="nav-item"><a class="nav-link px-2 px-md-3" href="javascript:void(0);">Services</a></li>
-                        <li class="nav-item"><a class="nav-link px-2 px-md-3" href="javascript:void(0);">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-2 px-md-3" href="javascript:void(0);">Contact</a></li>
+
+                <!-- Tombol Toggle Mobile (JS) -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu Navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto custom-nav-hover">
+                        <li class="nav-item">
+                            <a class="nav-link px-3 active" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#services">Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#about">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#contact">Kontak</a>
+                        </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section>
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section id="hero" class="d-flex align-items-center text-center">
         <div class="container">
-            <div class="row justify-content-center text-center">
+            <div class="row justify-content-center">
                 <div class="col-lg-9">
-                    <span class="badge-hero-custom px-3 py-2 mb-3">Selamat Datang di Portofolio Saya</span>
-                    <h1 class="display-4 font-weight-bold mb-3">Saya Jassen Kristanto</h1>
-                    <p class="lead text-muted mb-4">"Saya adalah pelajar dengan kemampuan Mekatronika, yang tertarik untuk bisa membangun sistem produksinya sendiri."</p>
+                    <span class="badge-hero-custom px-3 py-2 mb-3">
+                        Selamat Datang di Portofolio Saya
+                    </span>
+                    <h1 class="display-4 font-weight-bold hero-title mb-3">Saya Jassen Kristanto</h1>
+                    <p class="lead hero-desc mb-4">"Saya adalah pelajar dengan kemampuan Mekatronika, yang tertarik untuk bisa membangun sistem produksinya sendiri."</p>
                     <div class="d-flex justify-content-center">
-                        <a href="javascript:void(0);" class="btn btn-custom-navy mr-2">Hubungi Kami</a>
-                        <a href="javascript:void(0);" class="btn btn-custom-outline">Lihat Layanan</a>
+                        <a href="#contact" class="btn btn-custom-navy mr-2">Hubungi Kami</a>
+                        <a href="#services" class="btn btn-custom-outline">Lihat Layanan</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SERVICES SECTION -->
-    <section class="text-center py-5">
+    <!-- ==================== 3. SERVICES SECTION ==================== -->
+    <section id="services" class="text-center py-5">
         <div class="container">
             <div class="section-title-box mb-4">
-                <h2 class="h4 font-weight-bold">Layanan</h2>
+                <h2 class="h2 font-weight-bold">Layanan</h2>
             </div>
+
             <div class="row">
+                <!-- Mekanika Engineering -->
                 <div class="col-md-4 mb-4">
                     <div class="card card-service h-100 p-3">
                         <div class="card-body">
+                            <i class="fas fa-cogs fa-3x icon-orange mb-3"></i>
                             <h3 class="h5 font-weight-bold mb-3">Mekanika Engineering</h3>
-                            <ul class="list-unstyled skill-list text-left mb-0">
-                                <li><strong>CAD 2D Modeling:</strong> AutoCAD, Manual Drawing</li>
-                                <li><strong>CAD 3D Modeling:</strong> SolidWorks, Fusion 360</li>
-                                <li><strong>Prototyping & Manufaktur:</strong> 3D Printing, Laser Cutting</li>
-                                <li><strong>Machining:</strong> CNC Milling, CNC Bubut</li>
+                            <ul class="list-unstyled text-left mb-0">
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>CAD 2D Modeling:</strong> AutoCAD, Manual Drawing</li>
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>CAD 3D Modeling:</strong> SolidWorks, Fusion 360</li>
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Prototyping & Manufaktur:</strong> 3D Printing, Laser Cutting</li>
+                                <li><i class="fas fa-check mr-2 text-warning"></i><strong>Machining:</strong> CNC Milling, CNC Bubut, Manual Work</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
+                <!-- Elektronika Engineering -->
                 <div class="col-md-4 mb-4">
                     <div class="card card-service h-100 p-3">
                         <div class="card-body">
+                            <i class="fas fa-bolt fa-3x icon-navy mb-3"></i>
                             <h3 class="h5 font-weight-bold mb-3">Elektronika Engineering</h3>
-                            <ul class="list-unstyled skill-list text-left mb-0">
-                                <li><strong>Desain PCB:</strong> Skematik & Layout</li>
-                                <li><strong>Sistem Aktuator:</strong> Motor DC, Stepper, Pneumatik</li>
-                                <li><strong>Sensor:</strong> Jarak, Suhu, Encoder, Proximity</li>
+                            <ul class="list-unstyled text-left mb-0">
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Desain PCB:</strong> Skematik & Board Layout (Fusion)</li>
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Sistem Aktuator & Daya:</strong> Motor DC, Stepper, Pneumatik</li>
+                                <li><i class="fas fa-check mr-2 text-warning"></i><strong>Sensor & Instrumentasi:</strong> Sensor Jarak, Suhu, Proximity</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
+                <!-- Informatika & Programming -->
                 <div class="col-md-4 mb-4">
                     <div class="card card-service h-100 p-3">
                         <div class="card-body">
+                            <i class="fas fa-microchip fa-3x icon-navy mb-3"></i>
                             <h3 class="h5 font-weight-bold mb-3">Informatika & Programming</h3>
-                            <ul class="list-unstyled skill-list text-left mb-0">
-                                <li><strong>Mikrokontroler:</strong> C/C++ (Arduino, ESP32)</li>
-                                <li><strong>Protokol Komunikasi:</strong> I2C, SPI</li>
-                                <li><strong>PLC:</strong> Ladder Diagram (TIA Portal, CX)</li>
+                            <ul class="list-unstyled text-left mb-0">
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Mikrokontroler:</strong> C/C++ (Arduino, ESP32, Raspberry Pi)</li>
+                                <li class="mb-2"><i class="fas fa-check mr-2 text-warning"></i><strong>Protokol Komunikasi:</strong> I2C, SPI</li>
+                                <li><i class="fas fa-check mr-2 text-warning"></i><strong>Pemrograman PLC:</strong> Ladder Diagram (TIA Portal, CX)</li>
                             </ul>
                         </div>
                     </div>
@@ -275,39 +135,124 @@
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section class="text-center">
+    <!-- ==================== 4. ABOUT SECTION ==================== -->
+    <section id="about">
         <div class="container">
-            <div class="section-title-box">
-                <h2 class="h4">Tentang Saya</h2>
+            <div class="about-image-layout">
+                <div class="text-center section-title-box">
+                    <h2 class="h2 font-weight-bold">Tentang Saya</h2>
+                </div>
+                <!-- Baris 1: Paragraf Atas Penuh -->
+                <div class="row mb-4">
+                    <div class="col-12 text-left">
+                        <p class="lead font-weight-normal text-dark m-0">
+                            Saya Adalah mahasiswa yang belajar di Politeknik ATMI Surakarta, saat ini saya fokus untuk mengembangkan project saya untuk mengembangkan web portofolio demi mendukung kuliah saya. Memanfaatkan HTML dan CSS sebagai programnya saya memiliki impian untuk terus menyempurnakan web buatan saya.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Baris 2: Heding (Kiri) & Performance (Kanan) -->
+                <div class="row align-items-start text-left">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2 class="h3 font-weight-bold text-dark mb-3">Visi</h2>
+                        <p class="text-dark leading-relaxed m-0">
+                            "Mengoptimalkan potensi diri dalam pemrograman web dasar untuk membangun platform digital yang responsif, ramah pengguna, dan mampu menyelesaikan berbagai permasalahan di dunia industri."
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2 class="h3 font-weight-bold text-dark mb-3">Performa</h2>
+                        <!-- 1. Canvas Chart -->
+                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+                        <!-- 2. CDN Chart.js v4.4.1 (UMD) -->
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+                        <!-- 3. Inisialisasi Chart -->
+                        <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const ctx = document.getElementById('myChart');
+                            
+                            if (ctx && typeof Chart !== 'undefined') {
+                                new Chart(ctx, {
+                                    type: "bar",
+                                    data: {
+                                        labels: ["Mekanika", "Elektronika", "Mikrokontroler", "C/C++", "PLC"],
+                                        datasets: [{
+                                            label: "Tingkat Keahlian",
+                                            backgroundColor: ["#D9822B", "#BF6D1A", "#3B332C", "#7A7267", "#F2E8DC"],
+                                            borderColor: "#E8E1D7",
+                                            borderWidth: 1,
+                                            data: [90, 85, 41, 60, 75]
+                                        }]
+                                    },
+                                    options: {
+                                        responsive: true,
+                                        maintainAspectRatio: true,
+                                        plugins: {
+                                            legend: { display: false },
+                                            title: {
+                                                display: true,
+                                                text: "Performa & Keahlian Saya",
+                                                color: "#3B332C",
+                                                font: { size: 16, family: "'Poppins', sans-serif" }
+                                            }
+                                        },
+                                        scales: {
+                                            x: { ticks: { color: "#7A7267" }, grid: { color: "#E8E1D7" } },
+                                            y: { ticks: { color: "#7A7267" }, grid: { color: "#E8E1D7" }, beginAtZero: true }
+                                        }
+                                    }
+                                });
+                            }
+                        });
+                        </script>
+                    </div>
+                </div>
             </div>
-            <p class="lead text-muted mb-5 mx-auto">Saya Adalah mahasiswa Politeknik ATMI Surakarta yang fokus mengembangkan project web portofolio ini.</p>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section>
+    <!-- ==================== 5. CONTACT SECTION ==================== -->
+    <section id="contact">
         <div class="container">
             <div class="text-center section-title-box">
-                <h2 class="h3 font-weight-bold">Contact Saya</h2>
+                <h2 class="h2 font-weight-bold">kontak Saya</h2>
             </div>
+            
             <div class="row align-items-stretch">
+                <!-- Left Column -->
                 <div class="col-lg-5 mb-4 mb-lg-0">
                     <div class="contact-info-card h-100 d-flex flex-column justify-content-between">
                         <div>
                             <h3 class="h4 mb-3">Mari Bekerja Bersama</h3>
-                            <p class="mb-4">Silahkan menghubungi saya untuk kerjasama project.</p>
-                            <p class="mb-2">Email: <a href="mailto:krisjassen@gmail.com" class="contact-link">krisjassen@gmail.com</a></p>
-                            <p>Telepon: <a href="tel:+6281280202260" class="contact-link">+62 812-8020-2260</a></p>
+                            <p class="mb-4">Anda memiliki project atau ingin membuat perubahan? Silahkan menghubungi saya.</p>
+                            
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="far fa-envelope mr-3 text-white"></i>
+                                <a href="mailto:krisjassen@gmail.com" class="contact-link">krisjassen@gmail.com</a>
+                            </div>
+                            
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fas fa-phone-alt mr-3 text-white"></i>
+                                <a href="tel:+6281280202260" class="contact-link">+62 812-8020-2260</a>
+                            </div>
+                        </div>
+
+                        <div class="social-icons pt-3">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Right Column -->
                 <div class="col-lg-7">
                     <div class="contact-form-card h-100 d-flex flex-column justify-content-between">
                         <div>
                             <h3 class="h4 mb-4">Kirim Pesan</h3>
-                            <!-- Komponen Input & Textarea Tetap Utuh -->
-                            <form id="contactForm">
+                            <form id="contactForm" action="#" method="POST">
                                 <div class="form-group mb-3">
                                     <input type="text" class="form-control form-control-custom" placeholder="Nama Anda" required>
                                 </div>
@@ -328,7 +273,7 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ==================== 6. FOOTER SECTION ==================== -->
     <footer class="text-center">
         <div class="container">
             <h3 class="h5 font-weight-bold mb-2">MyPortofolio</h3>
@@ -336,5 +281,9 @@
         </div>
     </footer>
 
+    <!-- jQuery, Popper.js, dan Bootstrap JS (Wajib untuk Scrollspy & Toggler Mobile) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
