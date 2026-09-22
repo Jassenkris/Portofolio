@@ -253,3 +253,24 @@ footer {
     border-top: 0.5px solid #3B332C;
     border-left: 0.5px solid #3B332C;
 }
+
+/* Styling untuk History Comment */
+.comment-card {
+    background-color: var(--bg-cream-card); /* Warna latar putih (#FFFFFF) seperti form kirim pesan */
+    border: 1px solid var(--border-color); /* Warna garis tepi disesuaikan tema (#E8E1D7) */
+    border-radius: 12px;
+    min-height: 130px;
+    max-height: 180px;
+    overflow-y: auto;
+    overflow-wrap: anywhere;
+    transition: all 0.3s ease;
+}
+
+.comment-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.border-color-custom {
+    border-top: 1px solid var(--border-color);
+}
